@@ -15,7 +15,7 @@ def exibir(request, enquete_id):
     
     if enquete_id == 3:
         enquete = Enquete("", "Caso tenha respondido a pergunta anterior, escreva qual episódio do PodCast mais te marcou.", "19/08/2020")
-
+    
     return render(request, 'enquete.html', {"enquete": enquete})
 
 # Create your views here.
